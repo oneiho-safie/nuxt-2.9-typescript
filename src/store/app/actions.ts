@@ -1,8 +1,10 @@
-import { ActionContext } from 'vuex'
+import { ActionTree } from 'vuex'
 import { IApp } from '@/models/store/app/app'
 
-export default {
-  loginGet({ commit, dispatch, state }: ActionContext<IApp, any>) {
-    console.log('loginGet')
+const actions: ActionTree<IApp, any> = {
+  myAction({ commit }) {
+    commit('myMutation')
   }
 }
+
+export default actions

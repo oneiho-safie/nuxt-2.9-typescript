@@ -1,7 +1,10 @@
+import { MutationTree } from 'vuex'
 import { IApp } from '@/models/store/app/app'
 
-export default {
-  initState(state: IApp, payload: boolean) {
-    // do some
-  }
+const mutations: MutationTree<IApp> = {
+  myMutation: (state, payload: any) => {
+    state.foo = 999
+  },
 }
+
+export default mutations
