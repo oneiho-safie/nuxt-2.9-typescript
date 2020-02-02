@@ -29,7 +29,9 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '~/assets/bootstrap.min.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */

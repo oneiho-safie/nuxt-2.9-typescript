@@ -1,9 +1,13 @@
 <template>
-  <div>
-    <div class="x">
-      foo: {{ foo }}
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-6">
+        some
+      </div>
+      <div class="col-6">
+        text
+      </div>
     </div>
-    <button @click="testAction">myAction</button>
   </div>
 </template>
 
@@ -13,11 +17,6 @@ import { Getter } from 'vuex-class'
 
 @Component
 export default class ComponentName extends Vue {
-  @Getter('app/foo') foo!: number
-
-  testAction() {
-    this.$store.dispatch('app/myAction')
-  }
 }
 </script>
 
